@@ -1,0 +1,96 @@
+body {
+    /*background-image: url("../img/back.jpg");*/
+    /*background-size: cover;*/
+    background: #dadada;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+}
+
+.box {
+    position: relative;
+}
+
+.white {
+    background: #fff;
+    -webkit-animation: upWhite 2s infinite;;
+    animation: upWhite 2s infinite;
+    z-index: 1;
+}
+
+.black {
+    background: #000;
+    -webkit-animation: upBlack 2s infinite;;
+    animation: upBlack 2s infinite;
+    z-index: 2;
+}
+
+@keyframes upWhite {
+    0% {
+        width: 200px;
+        height: 200px;
+        top: -100px;
+        left: 0px;
+    }
+    25% {
+        width: 100px;
+        height: 100px;
+        top: 150px;
+        left: -50px;
+    }
+    50% {
+        width: 200px;
+        height: 200px;
+        top: 100px;
+        left: 200px;
+    }
+    75% {
+        width: 100px;
+        height: 100px;
+        top: -150px;
+        left: 150px;
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+        top: -100px;
+        left: 0px;
+    }
+}
+
+@keyframes upBlack {
+    0% {
+        width: 200px;
+        height: 200px;
+        top: 100px;
+        left: 0px;
+    }
+    25% {
+        width: 100px;
+        height: 100px;
+        top: 150px;
+        left: -150px;
+    }
+    50% {
+        width: 200px;
+        height: 200px;
+        top: -100px;
+        left: -200px;
+    }
+    75% {
+        width: 100px;
+        height: 100px;
+        top: -150px;
+        left: 50px;
+    }
+    100% {
+        width: 200px;
+        height: 200px;
+        top: 100px;
+        left: 0px;
+    }
+}

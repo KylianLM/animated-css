@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="public/styles/styles.css">
+    <title>CCS animate</title>
+</head>
+<body>
+<div class="container">
+    <div class="box white"></div>
+    <div class="box black"></div>
+</div>
+<script>
+    var white = document.querySelector('.white');
+    var black = document.querySelector('.black');
+
+    setTimeout(function() {
+        if ( white.style.zIndex == '1') {
+            white.style.zIndex = '2';
+            black.style.zIndex = '1';
+        } else {
+            white.style.zIndex = '1';
+            black.style.zIndex = '2';
+        }
+    },500);
+
+    var change = setInterval(function() {
+
+        if ( white.style.zIndex == '1') {
+            white.style.zIndex = '2';
+            black.style.zIndex = '1';
+        } else {
+            white.style.zIndex = '1';
+            black.style.zIndex = '2';
+        }
+    },1000)
+</script>
+</body>
+</html>
